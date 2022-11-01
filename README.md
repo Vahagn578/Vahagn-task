@@ -10,4 +10,4 @@ Solution.
 2. For logs used log4j2 dependency
 3. Implemented RetryAnalyzer class for rerunning failed tests
 4. Added ExpectedConditions methods for all UI interactions
-5. Added Jenkins file to project
+5. Added Jenkins file to the project
