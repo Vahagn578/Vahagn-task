@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CreateNewProjectTest extends BaseTest {
-    @Test(retryAnalyzer = RetryAnalyzer.class)
+    @Test(retryAnalyzer = RetryAnalyzer.class, description = "New project button should open picsart editor")
     public void verifyNewProjectButton() {
         log.info("Close trial modal and check create project page content");
         createProjectPage.closeTrialModal();

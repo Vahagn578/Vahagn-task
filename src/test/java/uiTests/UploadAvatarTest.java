@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UploadAvatarTest extends BaseTest {
-    @Test(retryAnalyzer = RetryAnalyzer.class)
+    @Test(retryAnalyzer = RetryAnalyzer.class, description = "User should be able to change profile avatar")
     public void verifyNewProfilePictureUpload() {
         log.info("Close trial modal and check user avatar");
         createProjectPage.closeTrialModal();

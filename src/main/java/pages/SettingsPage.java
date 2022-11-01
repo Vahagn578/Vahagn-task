@@ -24,7 +24,7 @@ public class SettingsPage extends BasePage {
 
     public void uploadPicture() {
         wait.until(ExpectedConditions.visibilityOf(uploadText));
-        uploadAvatar.sendKeys("/home/vahagn/code/automation/src/main/resources/test.png");
+        uploadAvatar.sendKeys("/home/vahagn/code/Vahagn-task/src/main/resources/test.png");
     }
 
     public boolean isSaveButtonDisabled() {
