@@ -1,5 +1,6 @@
 package base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -25,8 +26,8 @@ public class BaseTest {
     protected SoftAssert softAssert;
 
     public static WebDriver getDriver() {
-        System.setProperty("webdriver.chrome.driver", "src/test/java/base/chromedriver");
-        ChromeDriver driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         return driver;
     }
