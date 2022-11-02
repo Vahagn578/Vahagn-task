@@ -3,6 +3,7 @@ package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -43,6 +44,7 @@ public class BaseTest {
         settingsPage = new SettingsPage(driver);
         actions = new Actions(driver);
         softAssert = new SoftAssert();
+        log.info("User login");
         loginPage.loginViaUI();
     }
 

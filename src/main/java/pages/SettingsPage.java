@@ -18,6 +18,9 @@ public class SettingsPage extends BasePage {
     @FindBy(css = ".account-saveChanges-0-2-76.account-disabledButton-0-2-77")
     private WebElement disabledSaveButton;
 
+    @FindBy(xpath = "//img[contains(@src,'data:image')]")
+    private WebElement uploadedImageElement;
+
     public SettingsPage(WebDriver driver) {
         super(driver);
     }
@@ -42,5 +45,10 @@ public class SettingsPage extends BasePage {
     public void save() {
         wait.until(ExpectedConditions.elementToBeClickable(saveChanges));
         click(saveChanges);
+    }
+
+    public WebElement imageUploaded() {
+        wait.until(ExpectedConditions.visibilityOf(uploadedImageElement));
+        return uploadedImageElement;
     }
 }

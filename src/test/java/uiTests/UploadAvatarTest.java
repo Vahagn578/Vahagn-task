@@ -28,6 +28,7 @@ public class UploadAvatarTest extends BaseTest {
         softAssert.assertEquals(settingsPage.getSaveButtonText(), "Save Changes",
                 "Save button text is incorrect");
         settingsPage.save();
+        softAssert.assertNotNull(settingsPage.imageUploaded(), "The user avatar is not uploaded properly");
         softAssert.assertAll();
     }
 }
