@@ -15,7 +15,7 @@ public class SettingsPage extends BasePage {
     @FindBy(xpath = "//p[contains(@class,'user-avatar-description')]")
     private WebElement uploadText;
 
-    @FindBy(css = ".account-saveChanges-0-2-76.account-disabledButton-0-2-77")
+    @FindBy(css = ".account-saveChanges-0-2-78.account-disabledButton-0-2-79")
     private WebElement disabledSaveButton;
 
     @FindBy(xpath = "//img[contains(@src,'data:image')]")
